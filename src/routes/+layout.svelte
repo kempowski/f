@@ -1,5 +1,7 @@
 <script>
     export let data
+    console.log(data)
+    console.log("hi from layout")
 </script>
 
 <div id="nav">
@@ -7,8 +9,8 @@
     <ul>
 
         <li class="noselect"><a href="/releases">releases</a></li>
-        <li class="noselect"><a href="">konzerte</a></li>
-        <li class="noselect">videos</li>
+        <li class="noselect"><a href="/konzerte">konzerte</a></li>
+        <li class="noselect"><a href="/videos">videos</a></li>
     </ul>
     
     <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -25,7 +27,9 @@
     </svg>
 </div>
 
-<slot/>
+<section id="content">
+    <slot/>
+</section>
 
 <style>
     #nav {
@@ -70,5 +74,26 @@
         margin-bottom: 0;
         width: 100%;
         box-sizing: border-box;
+    }
+    #content{
+        width: 100%;
+        display: flex;
+        place-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #content h2{
+        align-self: center;
+    }
+    #content img {
+        width: 100%;
+    }
+    #releases{
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 </style>
