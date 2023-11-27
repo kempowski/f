@@ -1,0 +1,84 @@
+{
+  "releases": [
+    {
+      "Cover": "a2804599065_10_rfQVIMQtrQ.jpg",
+      "Link": "https://kurzmann-taktgott.bandcamp.com/album/humana-tape",
+      "Medium": "Vinyl",
+      "Titel": "Humana Tape",
+      "collectionId": "nn8lw9yanvwkqa9",
+      "collectionName": "Releases",
+      "created": "2023-08-17 12:53:52.447Z",
+      "id": "tc8a8etfhufijwr",
+      "updated": "2023-08-23 09:38:31.436Z",
+      "expand": {}
+    }
+  ],
+  "konzerte": [
+    {
+      "Datum": "",
+      "Flyer": "screenshot_2023_04_17_095136_2ZgJF1UeOQ.png",
+      "Link": "",
+      "Ort": "opernschall",
+      "VeranstaltungsName": "rap am bogen",
+      "collectionId": "clzxg2resvvhjuo",
+      "collectionName": "Konzerte",
+      "created": "2023-08-17 16:19:12.926Z",
+      "id": "ljm3ioi5kqu5vpc",
+      "updated": "2023-08-17 16:31:06.609Z",
+      "expand": {}
+    },
+    {
+      "Datum": "",
+      "Flyer": "",
+      "Link": "",
+      "Ort": "b72",
+      "VeranstaltungsName": "rhyme time bash",
+      "collectionId": "clzxg2resvvhjuo",
+      "collectionName": "Konzerte",
+      "created": "2023-08-17 16:18:57.849Z",
+      "id": "gu341ivi0c1fkdv",
+      "updated": "2023-08-17 16:18:57.849Z",
+      "expand": {}
+    },
+    {
+      "Datum": "2023-02-25 12:00:00.000Z",
+      "Flyer": "",
+      "Link": "",
+      "Ort": "1BM",
+      "VeranstaltungsName": "kunterbund im untergrund 2",
+      "collectionId": "clzxg2resvvhjuo",
+      "collectionName": "Konzerte",
+      "created": "2023-08-17 16:18:22.728Z",
+      "id": "03vcvdupncm307n",
+      "updated": "2023-08-17 16:18:22.728Z",
+      "expand": {}
+    },
+    {
+      "Datum": "2022-09-20 12:00:00.000Z",
+      "Flyer": "",
+      "Link": "",
+      "Ort": "Kramladen",
+      "VeranstaltungsName": "Humana Tape Release Party",
+      "collectionId": "clzxg2resvvhjuo",
+      "collectionName": "Konzerte",
+      "created": "2023-08-17 16:17:28.156Z",
+      "id": "qnz1qxsw87hmaqk",
+      "updated": "2023-08-17 16:17:28.156Z",
+      "expand": {}
+    }
+  ],
+  "videos": [
+    {
+      "Einbetten": "<p>&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QflnYYdLpZs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen&gt;&lt;/iframe&gt;</p>",
+      "Kunstler": "Sankt Johann",
+      "Titel": "Meditation",
+      "collectionId": "0uyotrksnk8du85",
+      "collectionName": "Videos",
+      "created": "2023-08-17 12:55:51.369Z",
+      "field1": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/QflnYYdLpZs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+      "id": "k5lddx9l3kiitmk",
+      "updated": "2023-08-23 09:45:36.066Z",
+      "expand": {}
+    }
+  ]
+}

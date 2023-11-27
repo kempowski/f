@@ -1,15 +1,18 @@
 <script>
     import Content from '../lib/components/Content.svelte';
 
-    export let data
-
-    console.log(data)
+  
 </script>
 
+<svelte:head>
+  <link href="" rel="stylesheet">
+</svelte:head>
 
 <div>
-    <!-- <Content data={data}/> --> -->
+    <!-- <Content data={data}/> --> 
 </div>
+
+
 
 <style>
     :global(body){
@@ -22,4 +25,5 @@
         height: 100vh;
         overflow-y: scroll;
     }
+    
 </style>

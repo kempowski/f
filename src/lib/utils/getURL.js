@@ -1,5 +1,5 @@
 // @ts-nocheck
-export const url = "https://fugbach.pockethost.io/"
+export const url = "https://fugnebel.pockethost.io/"
 
 
 export const getImageURL = (collectionId, recordId, fileName, size = '0x0') => {
