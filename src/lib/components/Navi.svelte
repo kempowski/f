@@ -44,6 +44,7 @@
         position: absolute;
         background-color: #fff;
         transition: width 0.2s ease-out;
+        transition-delay: 400ms;
     }
     #nav h1{
         padding: 20px 40px;
@@ -116,13 +117,10 @@
         border-style: none;
         box-sizing: border-box;
         transition: all 0.333s ease;
-        mix-blend-mode: overlay;
-        z-index: 4;
+        z-index: 5;
     }
     .bttnOpen{
         border-radius: 0;
-        mix-blend-mode: normal;
-
     }
     .bttnClose{
         border-radius: 100%;

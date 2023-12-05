@@ -1,7 +1,8 @@
 <script>
+
     export let data 
 
-    console.log(data.videos)
+    console.log(data)
 </script>
 
 {#each data.videos as video}
@@ -23,16 +24,4 @@
     h2, h3{
         margin: 0;
     }
-    /* .textWrap{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-    }
-    .titel{
-        margin:0;
-        font-weight: 200;
-    }
-    .name{
-        margin: 0;
-    } */
 </style>

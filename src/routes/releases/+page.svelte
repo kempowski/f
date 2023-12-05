@@ -1,8 +1,6 @@
 <script>
 	import { getImageURL, url } from '$lib/utils/getURL'
     export let data
-
-    console.log(data)
 </script>
 
 <div id="tapeWrap">

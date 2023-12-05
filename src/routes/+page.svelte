@@ -1,18 +1,13 @@
 <script>
     import Content from '../lib/components/Content.svelte';
 
-  
 </script>
 
 <svelte:head>
   <link href="" rel="stylesheet">
 </svelte:head>
 
-<div>
-    <!-- <Content data={data}/> --> 
-</div>
-
-
+hi
 
 <style>
     :global(body){
