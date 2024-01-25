@@ -13,9 +13,9 @@
 <div id="nav" class={menuOpen ? 'open' : 'close'}>
     <!-- <h1>fugbach</h1> -->
     <ul>
-        <a on:click={opener} class="navItem" href="/releases">releases</a>
-        <a on:click={opener} class="navItem" href="/konzerte">konzerte</a>
-        <a on:click={opener} class="navItem" href="/videos">videos</a>
+        <li><a on:click={opener} class="navItem" href="/releases">releases</a></li>
+        <li><a on:click={opener} class="navItem" href="/konzerte">konzerte</a></li>
+        <li><a on:click={opener} class="navItem" href="/videos">videos</a></li>
     </ul>
     
     <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -33,7 +33,7 @@
 </div>
 <button on:click={opener} class={menuOpen ? 'bttnOpen' : 'bttnClose'}></button>
 
-<style>
+<style lang="scss">
     #nav {
         height: 100vh;
         flex-direction: column;
@@ -46,26 +46,32 @@
         transition: width 0.2s ease-out;
         transition-delay: 400ms;
     }
-    #nav h1{
-        padding: 20px 40px;
-        width: 100%;
-        margin: 0;
-        /* cursor: none; */
-        border-bottom-style: solid;
-        font-family: 'Oswald', sans-serif;
-        font-size: 4.5rem;
-    }
     #nav ul {
         padding: 0;
         margin: 0;
     }
+    #nav ul li{
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        border-bottom-style: solid;
+    }
+    #nav ul li:hover{
+        background-color: #202020;
+
+        a {
+            color: #fafafa;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+    }
     .navItem {
         display: block;
         width: 100%;
+        padding-left: 2rem;
+        height: fit-content;
         font-size: 15pt;
         letter-spacing: 0.5px;
-        padding: 20px 40px;
-        border-bottom-style: solid;
         font-weight: 700;
         text-transform: uppercase;
         transition: all 0.25s ease;
@@ -75,23 +81,23 @@
         font-weight: 200;
         font-size: 1.9rem;
     }
-    .navItem:hover {
+    /* .navItem:hover {
         background-color: #000;
-        color: #fff;
+        color: #000;
         cursor: crosshair;
         font-weight: 700;
         font-size: 1rem;
         letter-spacing: 1rem;
 
-    }
+    } */
     #nav ul li a{ 
         color: #202020;
     }
     #nav ul li a:hover{ 
-        color: #fff;
+        /* color: ; */
     }
     #nav ul li:first-child {
-        border-top-style: solid;
+        /* border-top-style: solid; */
     }
     #nav svg{
         padding: 20px;
@@ -100,6 +106,7 @@
         margin-bottom: 0;
         width: 100%;
         box-sizing: border-box;
+        fill: #202020;
     }
     .open{
         width: 100vw;
@@ -110,7 +117,7 @@
     button{
         width: 40px;
         height: 40px;
-        background-color: #000;
+        background-color: #202020;
         position: absolute;
         top: 20px;
         right: 20px;

@@ -7,18 +7,23 @@
   <link href="" rel="stylesheet">
 </svelte:head>
 
-hi
+
+<div>
+    <img>
+</div>
+
 
 <style>
     :global(body){
         margin: 0;
         overflow: hidden;
+        border: solid 4px;
     }
-    div {
-        display: flex;
-        width: 100%;
+
+    div{
+        width: 100vw;
         height: 100vh;
-        overflow-y: scroll;
+        background-color: #202020;
     }
     
 </style>

@@ -26,6 +26,7 @@
         place-items: center;
         align-items: center;
         flex-direction: column;
+        border-top-style: solid 2px;
     }
     #content h2{
         align-self: center;
