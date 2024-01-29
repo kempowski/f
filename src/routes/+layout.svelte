@@ -62,7 +62,7 @@
             }
         }
         img{
-            width: 300px;
+            width: 150px;
             height: fit-content;
             animation: logo 3000ms ease-out;
             animation-fill-mode: forwards;
@@ -104,6 +104,11 @@
     @media screen and (min-width: 800px){
         #content{
             padding: 5rem;
+        }
+        #splash{
+            img{
+                width: 300px;
+            }
         }
     }
 </style>

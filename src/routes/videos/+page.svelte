@@ -9,8 +9,8 @@
     <div id="videoContent">
         {@html video.Einbetten}
         <div class="textWrap">
-            <h2 class="name">{video.Kunstler}</h2>
-            <h3 class="titel">{video.Titel}</h3>
+            <h2 class="titel">{video.Titel}</h2>
+            <h3 class="name">{video.Kunstler}</h3>
         </div>
     </div>
 {/each}

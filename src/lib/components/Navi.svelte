@@ -16,6 +16,7 @@
         <li><a on:click={opener} class="navItem" href="/releases">releases</a></li>
         <li><a on:click={opener} class="navItem" href="/konzerte">konzerte</a></li>
         <li><a on:click={opener} class="navItem" href="/videos">videos</a></li>
+        <li><a on:click={opener} class="navItem" href="/kontakt">kontakt</a></li>
     </ul>
     
     <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -38,13 +39,14 @@
         height: 100vh;
         flex-direction: column;
         border-width: 4px;
-        border-right-style: none;
+        // border-right-style: solid;
         overflow: hidden;
         display: flex;
         position: absolute;
         background-color: #fff;
-        transition: width 0.2s ease-out;
-        transition-delay: 400ms;
+        transition: width 0.2s ease-out, border-right-style 0.2s 0.4s linear;
+        transition-delay: 0ms;
+        box-sizing: border-box;
     }
     #nav ul {
         padding: 0;
@@ -109,10 +111,14 @@
         fill: #202020;
     }
     .open{
-        width: 100vw;
+        width: calc(100vw - 4px);
+        // width: 50%;
+        border-right-style: solid;
+
     }
     .close{
         width: 0vw;
+        border-right-style: none;
     }
     button{
         width: 40px;

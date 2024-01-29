@@ -7,7 +7,7 @@
     {#each data.releases as release}
         <a class="releaseItem" target="_blank" href="{release.Link}">
             <img src={url}{getImageURL(release.collectionId, release.id, release.Cover)} alt={release.Title}>
-            <h1>{release.Titel}</h1>
+            <h2>{release.Titel}</h2>
             <h3 class="artistName">{release.Artist}</h3>
             <h3 class="medium">{release.Medium}</h3>
         </a>
@@ -29,7 +29,11 @@
     }
     img{
         width: 100%;
+        -webkit-box-shadow: 0px 9px 18px 10px rgba(0,0,0,0.09);
+        -moz-box-shadow: 0px 9px 18px 10px rgba(0,0,0,0.09);
+        box-shadow: 0px 9px 18px 10px rgba(0,0,0,0.09);
     }
+
     .releaseItem{
         text-decoration: none;
         color: #202020;
