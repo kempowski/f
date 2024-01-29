@@ -14,12 +14,12 @@
     {/each}
 </div>
 
-<style>
+<style lang="scss">
     #tapeWrap{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         width: 100%;
         max-width: 1140px;
         margin-top: 5rem;
@@ -39,8 +39,8 @@
         color: #202020;
         margin-bottom: 3rem;
     }
-    h1{
-        margin: 0;
+    h2{
+        margin-bottom: 0;
     }
     .artistName{
         font-weight: 200;
@@ -55,10 +55,14 @@
     }
     @media screen and (min-width: 800px){
         #tapeWrap{
-            justify-content: space-between;
+            // justify-content: space-between;
             flex-wrap: wrap;
             flex-direction: row;
             margin-top: 0;
+            align-items: flex-start;
+        }
+        .releaseItem{
+            margin-right: 2rem;
         }
     }
 </style>
