@@ -4,11 +4,11 @@
     import { page } from '$app/stores'
     import {loading} from '$lib/loading';
     import { fly, fade, scale } from 'svelte/transition';
-    import { browser } from '$app/environment'
+    // import { browser } from '$app/environment'
 
     
     import Navi from '../lib/components/Navi.svelte';
-    export let data
+    // export let data
 
 
     $: $loading = !!$navigating
