@@ -21,6 +21,6 @@ jobs:
         uses: caprover/deploy-from-github@v1.1.2
         with:
           server: https://fugbach.one
-          app: 'www'
+          app: 'f'
           token: '${{ secrets.APP_TOKEN }}'
           image: 'ghcr.io/kempowski/f:latest'
