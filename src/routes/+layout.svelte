@@ -4,23 +4,28 @@
     import { page } from '$app/stores'
     import {loading} from '$lib/loading';
     import { fly, fade, scale } from 'svelte/transition';
-    import {onMount} from 'svelte'
-    import { goto } from '$app/navigation'
+    import { browser } from '$app/environment'
 
+    
     import Navi from '../lib/components/Navi.svelte';
-    import Loading from '../lib/components/Loading.svelte';
     export let data
 
 
     $: $loading = !!$navigating
 
-    $: console.log($page)
 
-    onMount(() => {
-        setTimeout(() => {
-            goto('/releases')
-        }, 2000)
-    })
+    // if ( browser ){
+    //     const pageAccessedByReload = (
+    //         (window.performance.navigation && window.performance.navigation.type === 1) ||
+    //             window.performance
+    //             .getEntriesByType('navigation')
+    //             .map((nav) => nav.type)
+    //             .includes('reload')
+    //         );
+    //         alert(pageAccessedByReload);
+    // }
+
+
 </script>
 
 {#if ($page.route.id === '/')}

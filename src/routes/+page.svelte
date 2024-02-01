@@ -1,5 +1,12 @@
 <script>
-    import Content from '../lib/components/Content.svelte';
+    import {onMount} from 'svelte'
+    import { goto } from '$app/navigation'
+
+    onMount(() => {
+        setTimeout(() => {
+            goto('/releases')
+        }, 2000)
+    })
 
 </script>
 
