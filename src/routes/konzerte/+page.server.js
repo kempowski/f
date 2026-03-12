@@ -1,12 +1,13 @@
-import {pb} from "$lib/db"
-
+import { createPB } from "$lib/db"
 
 export const load = async () => {
+	const pb = createPB();
+
 	const konzerte = await pb.collection('Konzerte').getFullList({
 		sort: '-Datum'
 	})
 
 	return {
-        konzerte
+        konzerte: JSON.parse(JSON.stringify(konzerte))
 	}
 }
