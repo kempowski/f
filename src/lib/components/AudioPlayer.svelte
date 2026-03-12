@@ -295,7 +295,8 @@
       padding: 20px;
     }
     @media (min-width: 1500px){
-      width: 1124px;
+      width: 100%;
+      max-width: 1124px;
     }
   }
 
