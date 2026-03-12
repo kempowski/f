@@ -1,26 +1,30 @@
 <script>
   export let data;
+  console.log(data)
 </script>
 
 
 <div class="album-grid">
   {#each data.albums as album}
-    <a href={`/albums/${album.id}`} class="album-card">
-      {#if album.cover}
-        <img src={album.cover} alt={album.title} class="cover" />
-      {:else}
-        <div class="cover placeholder">No Cover</div>
-      {/if}
-      <!-- <div class="info">
-        <strong>{album.title}</strong>
-        <span>{album.artist}</span>
-      </div> -->
-    </a>
-  {/each}
+    {#if album.public}
+      <a href={`/albums/${album.id}`} class="album-card">
+        {#if album.cover}
+          <img src={album.cover} alt={album.title} class="cover" />
+        {:else}
+          <div class="cover placeholder">No Cover</div>
+        {/if}
+        <!-- <div class="info">
+          <strong>{album.title}</strong>
+          <span>{album.artist}</span>
+        </div> -->
+      </a>
+    {/if}
+    {/each}
+
 </div>
 
 <style>
-  .album-grid {
+.album-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
