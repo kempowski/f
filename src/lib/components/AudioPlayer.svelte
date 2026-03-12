@@ -184,13 +184,33 @@
     {/each}
 
   </div>
-
+<div class="noise-gradient h-96 w-full rounded-2xl"></div>
 </div>
 
 
 <!-- <AudioVisualizer {audio} bars={40} /> -->
 
 <style>
+.noise-gradient {
+  position: relative;
+  background: linear-gradient(135deg, #6366f1, #ec4899, #f59e0b);
+  overflow: hidden;
+}
+
+.noise-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+}
+  *{
+    box-sizing: border-box;
+  }
   .player {
     display: flex;
     flex-direction: column;
@@ -237,7 +257,7 @@
   }
 
   .progress {
-    height: 6px;
+    height: 12px;
     background: #202020;
     border-radius: 8px;
     cursor: pointer;
@@ -287,16 +307,17 @@
     @media (min-width: 999px) {
       position: absolute;
       bottom: 0px;
-      width: calc(100vw - 400px);
+      width: calc(100vw - 420px);
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: white;
-      padding: 20px;
+      padding: 20px 0;
     }
-    @media (min-width: 1500px){
+    @media (min-width: 1600px){
       width: 100%;
       max-width: 1124px;
+      
     }
   }
 
@@ -319,6 +340,7 @@
     margin-top: 0px;
     max-width: 100px;
     margin-top: 17px;
+    padding-right: 20px;
   }
 }
 
