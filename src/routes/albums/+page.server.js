@@ -12,7 +12,7 @@ export async function load() {
     title: song.release ?? "Untitled Album",
     artist: song.artist,
     cover: song.cover ? pb.files.getUrl(song, song.cover) : null,
-    public: song.public
+    public: song.spublic
   }));
 
   return { albums };
