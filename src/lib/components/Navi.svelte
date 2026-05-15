@@ -96,12 +96,12 @@
     #nav ul li a{ 
         color: #202020;
     }
-    #nav ul li a:hover{ 
-        /* color: ; */
-    }
-    #nav ul li:first-child {
-        /* border-top-style: solid; */
-    }
+    // #nav ul li a:hover{ 
+    //     /* color: ; */
+    // }
+    // #nav ul li:first-child {
+    //     /* border-top-style: solid; */
+    // }
     #nav svg{
         padding: 20px;
         justify-self: flex-end;
