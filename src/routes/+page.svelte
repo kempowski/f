@@ -4,7 +4,7 @@
 
     onMount(() => {
         setTimeout(() => {
-            goto('/releases')
+            goto('/albums')
         }, 2000)
     })
 
