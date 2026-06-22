@@ -1,6 +1,7 @@
-import PocketBase from 'pocketbase';
+import { pb } from '$lib/pocketbase'; // ← neu
+// import PocketBase from 'pocketbase';
 
-const pb = new PocketBase('https://pocket.cr.fugbach.one');
+// const pb = new PocketBase('https://pocket.cr.fugbach.one');
 
 export async function load({ params }) {
   const { id } = params;
@@ -16,6 +17,7 @@ export async function load({ params }) {
     title = title.replace("master", "")
     return {
       id: record.id,
+      filename: file,
       title,
       artist: record.artist,
       release: record.release,
